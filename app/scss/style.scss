@@ -475,16 +475,20 @@
 .footer__left {
     display: flex;
     align-items: center;
+    position: relative;
     &-price {
-        padding: 8px 22px;
+        padding: 8px 16px;
         background-color: #e6f1fd;
         border-radius: 30px;
         color: $blue;
-        margin-right: 15px;
+        margin-right: 12px;
     }
     &-likes {
         padding-left: 20px;
         position: relative;
+        margin-right: 9px;
+        font-size: 15px;
+        color: #6f7d8d;
         &::before {
             background-image: url('../images/icons/heart-icon.svg');
             background-position: center;
@@ -504,6 +508,8 @@
 .footer__right {
     padding-left: 20px;
     position: relative;
+    font-size: 15px;
+    color: $blue;
     &::before {
         content: '';
         position: absolute;
@@ -554,6 +560,25 @@
     justify-content: space-between;
 }
 
-.rate-stars {
-    stroke: #000;
+.product__footer-star {
+    position: relative;
+}
+
+.bg-stars {
+    position: absolute;
+    top: 0;
+    right: 4px;
+    display: flex;
+    justify-content: space-between;
+    img {
+        width: 15px;
+        height: 15px;
+    }
+    img+img {
+        margin-left: 5px;
+    }
+}
+
+.mix-stars {
+    top: 10px;
 }
