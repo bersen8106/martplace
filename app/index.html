@@ -82,7 +82,7 @@
             </div>
         </div>
     </section>
-    <section class="features">
+    <section class="features section">
         <div class="container">
             <div class="features__inner">
 
@@ -115,7 +115,7 @@
         </div>
     </section>
 
-    <section class="products">
+    <section class="products section">
         <div class="container">
             <div class="products__inner">
                 <div class="products__title">
@@ -208,27 +208,29 @@
         </div>
     </section>
 
-    <section class="newest-products">
+    <section class="newest-products section">
         <div class="container">
             <div class="products__inner">
-                <div class="products__title">Newest Release Products</div>
+                <div class="products__title">Newest Release Products
+                    <div class="products__title-filter">Filter by:</div>
+                </div>
 
                 <div class="products__inner-btn">
-                    <button title="Plugins">Plugins</button>
-                    <button title="WordPress">WordPress</button>
-                    <button title="Site Template">Site Template</button>
-                    <button title="PSD Template">PSD Template</button>
-                    <button title="Joomla">Joomla</button>
-                    <button title="User Interface">User Interface</button>
-                    <button title="Landing Page">Landing Page</button>
-                    <button title="Software">Software</button>
+                    <button type="button" data-filter=".category-plugins" title="Plugins">Plugins</button>
+                    <button type="button" data-filter=".category-wp" title="WordPress">WordPress</button>
+                    <button type="button" data-filter=".category-st" title="Site Template">Site Template</button>
+                    <button type="button" data-filter=".category-psd" title="PSD Template">PSD Template</button>
+                    <button type="button" data-filter=".category-joomla" title="Joomla">Joomla</button>
+                    <button type="button" data-filter=".category-ui" title="User Interface">User Interface</button>
+                    <button type="button" data-filter=".category-lp" title="Landing Page">Landing Page</button>
+                    <button type="button" data-filter=".category-sw" title="Software">Software</button>
                 </div>
 
                 <div class="cards">
 
                     <div class="cards__inner">
 
-                        <div class="card__content">
+                        <div class="card__content mix category-wp" data-order="1">
                             <div class="card__content-header">
                                 <img class="card__content-image" style="background-image: url('images/content/nrp1.jpg'); width: 361px; height: 230px;">
                                 <a class="card__content-image-btn left-btn" href="#">More Info</a>
@@ -255,7 +257,7 @@
                             </div>
                         </div>
 
-                        <div class="card__content">
+                        <div class="card__content mix category-psd" data-order="2">
                             <div class="card__content-header">
                                 <img class="card__content-image" style="background-image: url('images/content/nrp2.jpg'); width: 361px; height: 230px;">
                                 <a class="card__content-image-btn left-btn" href="#">More Info</a>
@@ -282,7 +284,7 @@
                             </div>
                         </div>
 
-                        <div class="card__content">
+                        <div class="card__content mix category-st" data-order="3">
                             <div class="card__content-header">
                                 <img class="card__content-image" style="background-image: url('images/content/nrp3.jpg'); width: 361px; height: 230px;">
                                 <a class="card__content-image-btn left-btn" href="#">More Info</a>
@@ -317,7 +319,7 @@
                             </div>
                         </div>
 
-                        <div class="card__content">
+                        <div class="card__content mix category-wp" data-order="4">
                             <div class="card__content-header">
                                 <img class="card__content-image" style="background-image: url('images/content/nrp3.jpg'); width: 361px; height: 230px;">
                                 <a class="card__content-image-btn left-btn" href="#">More Info</a>
@@ -352,7 +354,7 @@
                             </div>
                         </div>
 
-                        <div class="card__content">
+                        <div class="card__content mix category-psd" data-order="5">
                             <div class="card__content-header">
                                 <img class="card__content-image" style="background-image: url('images/content/nrp2.jpg'); width: 361px; height: 230px;">
                                 <a class="card__content-image-btn left-btn" href="#">More Info</a>
@@ -379,7 +381,7 @@
                             </div>
                         </div>
 
-                        <div class="card__content">
+                        <div class="card__content mix category-st" data-order="6">
                             <div class="card__content-header">
                                 <img class="card__content-image" style="background-image: url('images/content/nrp3.jpg'); width: 361px; height: 230px;">
                                 <a class="card__content-image-btn left-btn" href="#">More Info</a>
@@ -416,7 +418,7 @@
                     </div>
                     <div class="cards-link">
                         <div class="link__btn">
-                            <a href="#">All New Products</a>
+                            <button type="button" data-filter="all" href="#">All New Products</button>
                         </div>
                     </div>
                 </div>
@@ -424,7 +426,7 @@
         </div>
     </section>
 
-    <section class="feed">
+    <section class="feed section">
         <div class="container">
             <div class="products__title">Your Followers Feed
                 <div class="products__title-arrows-place"></div>
@@ -528,6 +530,196 @@
                     </div>
                 </div>
 
+                <div class="card__content">
+                    <div class="card__content-header">
+                        <img class="card__content-image" style="background-image: url('images/content/nrp1.jpg'); width: 361px; height: 230px;">
+                        <a class="card__content-image-btn left-btn" href="#">More Info</a>
+                        <a class="card__content-image-btn right-btn" href="#">Live Demo</a>
+                    </div>
+                    <div class="card__content-body">
+                        <a class="card__content-title">E-commerce Shoping Cart</a>
+                        <div class="card__content-subtitle">
+                            <div class="subtitle__avatar" style="background-image: url('images/author-icon.png'); width: 30px; height: 30px; margin-right: 4px;"></div>
+                            <span class="name">Theme-Valley</span>
+                            <div class="subtitle__theme-icon" style="background-image: url('images/content/wp-icon.png'); width: 16px; height: 16px; margin: 0 4px 0 20px;"></div>
+                            <span class="subtitle__theme-name">WordPress</span>
+                        </div>
+                        <p class="card__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
+                    </div>
+                    <div class="card__content-footer">
+                        <div class="footer__left">
+                            <div class="footer__left-price">$20</div>
+                            <div class="footer__left-likes">90</div>
+                            <div class="rate-stars"></div>
+                            <div class="bg-stars mix-stars">
+                                <img src="images/star-icon.svg" alt="">
+                                <img src="images/star-icon.svg" alt="">
+                                <img src="images/star-icon.svg" alt="">
+                                <img src="images/star-icon.svg" alt="">
+                                <img src="images/star-icon.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="footer__right">
+                            246
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card__content">
+                    <div class="card__content-header">
+                        <img class="card__content-image" style="background-image: url('images/content/nrp1.jpg'); width: 361px; height: 230px;">
+                        <a class="card__content-image-btn left-btn" href="#">More Info</a>
+                        <a class="card__content-image-btn right-btn" href="#">Live Demo</a>
+                    </div>
+                    <div class="card__content-body">
+                        <a class="card__content-title">E-commerce Shoping Cart</a>
+                        <div class="card__content-subtitle">
+                            <div class="subtitle__avatar" style="background-image: url('images/author-icon.png'); width: 30px; height: 30px; margin-right: 4px;"></div>
+                            <span class="name">Theme-Valley</span>
+                            <div class="subtitle__theme-icon" style="background-image: url('images/content/wp-icon.png'); width: 16px; height: 16px; margin: 0 4px 0 20px;"></div>
+                            <span class="subtitle__theme-name">WordPress</span>
+                        </div>
+                        <p class="card__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
+                    </div>
+                    <div class="card__content-footer">
+                        <div class="footer__left">
+                            <div class="footer__left-price">$20</div>
+                            <div class="footer__left-likes">90</div>
+                            <div class="rate-stars"></div>
+                            <div class="bg-stars mix-stars">
+                                <img src="images/star-icon.svg" alt="">
+                                <img src="images/star-icon.svg" alt="">
+                                <img src="images/star-icon.svg" alt="">
+                                <img src="images/star-icon.svg" alt="">
+                                <img src="images/star-icon.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="footer__right">
+                            246
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card__content">
+                    <div class="card__content-header">
+                        <img class="card__content-image" style="background-image: url('images/content/nrp1.jpg'); width: 361px; height: 230px;">
+                        <a class="card__content-image-btn left-btn" href="#">More Info</a>
+                        <a class="card__content-image-btn right-btn" href="#">Live Demo</a>
+                    </div>
+                    <div class="card__content-body">
+                        <a class="card__content-title">E-commerce Shoping Cart</a>
+                        <div class="card__content-subtitle">
+                            <div class="subtitle__avatar" style="background-image: url('images/author-icon.png'); width: 30px; height: 30px; margin-right: 4px;"></div>
+                            <span class="name">Theme-Valley</span>
+                            <div class="subtitle__theme-icon" style="background-image: url('images/content/wp-icon.png'); width: 16px; height: 16px; margin: 0 4px 0 20px;"></div>
+                            <span class="subtitle__theme-name">WordPress</span>
+                        </div>
+                        <p class="card__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
+                    </div>
+                    <div class="card__content-footer">
+                        <div class="footer__left">
+                            <div class="footer__left-price">$20</div>
+                            <div class="footer__left-likes">90</div>
+                            <div class="rate-stars"></div>
+                            <div class="bg-stars mix-stars">
+                                <img src="images/star-icon.svg" alt="">
+                                <img src="images/star-icon.svg" alt="">
+                                <img src="images/star-icon.svg" alt="">
+                                <img src="images/star-icon.svg" alt="">
+                                <img src="images/star-icon.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="footer__right">
+                            246
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="total">
+        <div class="container">
+            <div class="total__inner">
+                <div class="total__item">
+                    <img src="images/icons/case-icon.svg" alt="" style="width: 41px; height: 48px;">
+                    <div class="total__item-count" style="color: #feb71d;">38,436</div>
+                    <div class="total__item-text">items for sale</div>
+                </div>
+
+                <div class="total__item">
+                    <img src="images/icons/cloud-icon.svg" alt="" style="width: 41px; height: 48px;">
+                    <div class="total__item-count" style="color: #58c9e9;">38,436</div>
+                    <div class="total__item-text">total sales</div>
+                </div>
+
+                <div class="total__item">
+                    <img src="images/icons/smile-icon.svg" alt="" style="width: 41px; height: 48px;">
+                    <div class="total__item-count" style="color: #77de51;">38,436</div>
+                    <div class="total__item-text">happy customers</div>
+                </div>
+
+                <div class="total__item">
+                    <img src="images/icons/users-icon.svg" alt="" style="width: 41px; height: 48px;">
+                    <div class="total__item-count" style="color: #ff6a6d;">38,436</div>
+                    <div class="total__item-text">members</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="choose section">
+        <div class="container">
+            <div class="choose__inner">
+                <div class="choose__header">
+                    <div class="choose__header-title">Why Choose <span>MartPlace</span></div>
+                    <div class="choose__header-text">Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est laborum dolo rumes fugats untras.</div>
+                </div>
+                <div class="choose__cards">
+                    <div class="card__item">
+                        <div class="card__item-number">01</div>
+                        <img src="images/content/license-icon.png" alt="">
+                        <div class="card__item-title">One Time Payment</div>
+                        <div class="card__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="card__item-number">02</div>
+                        <img src="images/content/magic-icon.png" alt="">
+                        <div class="card__item-title">Quality Products</div>
+                        <div class="card__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="card__item-number">03</div>
+                        <img src="images/content/lock-icon.png" alt="">
+                        <div class="card__item-title">100% Secure Payment</div>
+                        <div class="card__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="card__item-number">04</div>
+                        <img src="images/content/chart-icon.png" alt="">
+                        <div class="card__item-title">Well Organized Code</div>
+                        <div class="card__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="card__item-number">05</div>
+                        <img src="images/content/leaf-icon.png" alt="">
+                        <div class="card__item-title">Life Time Free Update</div>
+                        <div class="card__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="card__item-number">06</div>
+                        <img src="images/content/phone-icon.png" alt="">
+                        <div class="card__item-title">Fast and Friendly Support</div>
+                        <div class="card__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
