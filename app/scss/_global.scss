@@ -8,9 +8,24 @@ html {
     box-sizing: inherit;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
 a {
     display: inline-block;
     text-decoration: none;
+    color: inherit;
 }
 
 p {
@@ -40,4 +55,37 @@ body {
 
 .section {
     padding: 118px 0;
+}
+
+.fill-btn {
+    border: 1px solid #fff;
+    border-radius: 30px;
+    width: 190px;
+    transition: all .3s;
+    background-color: $blue;
+    margin: 0 auto;
+    text-align: center;
+    a {
+        color: #fff;
+        padding: 19px 0;
+        font-size: 16px;
+        text-align: center;
+        display: block;
+    }
+}
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 15px;
+    span {
+        color: $blue;
+    }
+}
+
+.text {
+    text-align: center;
+    max-width: 672px;
+    margin: 0 auto;
+    line-height: 30px;
 }

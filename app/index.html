@@ -80,6 +80,24 @@
                     </div>
                 </div>
             </div>
+            <div class="view__search">
+                <div class="view__search-inner">
+                    <form action="">
+                        <input type="text" placeholder="Search your products...">
+                        <select name="product">
+                            <option value="All Categories">All Categories</option>
+                            <option value="Plugins">Plugins</option>
+                            <option value="WordPress">WordPress</option>
+                            <option value="PSD">PSD</option>
+                            <option value="Software">Software</option>
+                        </select>
+                        <button type="submit">Search Now</button>
+                    </form>
+                </div>
+            </div>
+            <div class="view__search-shadow shadow"></div>
+            <div class="view__search-shadow shadow-copy"></div>
+
         </div>
     </section>
     <section class="features section">
@@ -123,8 +141,6 @@
                     <div class="products__title-arrows-place"></div>
                 </div>
 
-
-
                 <div class="product-slider">
 
                     <div class="product__item">
@@ -132,8 +148,8 @@
                         <div class="product__item-content">
                             <a class="product__item-title">One Page Resume Template</a>
                             <div class="product__item-icons">
-                                <div class="avatar" style="background-image: url('images/author-icon.png')"></div>
-                                <span class="author-name">AazzTech</span>
+                                <a class="avatar" href="#"><img src="images/content/author-icon.png" alt=""></a>
+                                <a href="#"><span class="author-name">AazzTech</span></a>
                                 <div class="theme-icon" style="background-image: url('images/content/wp-icon.png')"></div>
                                 <span class="theme-name">WordPress</span>
                             </div>
@@ -169,8 +185,8 @@
                         <div class="product__item-content">
                             <a class="product__item-title">One Page Resume Template</a>
                             <div class="product__item-icons">
-                                <div class="avatar" style="background-image: url('images/author-icon.png')"></div>
-                                <span class="author-name">AazzTech</span>
+                                <a class="avatar" href="#"><img src="images/content/author-icon.png" alt=""></a>
+                                <a href="#"><span class="author-name">AazzTech</span></a>
                                 <div class="theme-icon" style="background-image: url('images/content/wp-icon.png')"></div>
                                 <span class="theme-name">WordPress</span>
                             </div>
@@ -212,8 +228,21 @@
         <div class="container">
             <div class="products__inner">
                 <div class="products__title">Newest Release Products
-                    <div class="products__title-filter">Filter by:</div>
+                    <div class="products__title-filter">Filter by:
+
+                        <div class="dropdown__filter">
+                            <ul class="dropdown__filter-list">
+                                <li><button type="button" data-filter=".category-trending" title="Trending item">Trending item</button></li>
+                                <li><button type="button">Best seller</button></li>
+                                <li><button type="button">Best rating</button></li>
+                                <li><button type="button">Low price</button></li>
+                                <li><button type="button">High price</button></li>
+                            </ul>
+                        </div>
+
+                    </div>
                 </div>
+
 
                 <div class="products__inner-btn">
                     <button type="button" data-filter=".category-plugins" title="Plugins">Plugins</button>
@@ -230,7 +259,7 @@
 
                     <div class="cards__inner">
 
-                        <div class="card__content mix category-wp" data-order="1">
+                        <div class="card__content mix category-wp category-trending" data-order="1">
                             <div class="card__content-header">
                                 <img class="card__content-image" style="background-image: url('images/content/nrp1.jpg'); width: 361px; height: 230px;">
                                 <a class="card__content-image-btn left-btn" href="#">More Info</a>
@@ -238,12 +267,14 @@
                             </div>
                             <div class="card__content-body">
                                 <a class="card__content-title">E-commerce Shoping Cart</a>
-                                <div class="card__content-subtitle">
-                                    <div class="subtitle__avatar" style="background-image: url('images/author-icon.png'); width: 30px; height: 30px; margin-right: 4px;"></div>
-                                    <span class="name">Theme-Valley</span>
-                                    <div class="subtitle__theme-icon" style="background-image: url('images/content/wp-icon.png'); width: 16px; height: 16px; margin: 0 4px 0 20px;"></div>
-                                    <span class="subtitle__theme-name">WordPress</span>
+
+                                <div class="product__item-icons">
+                                    <a class="avatar" href="#"><img src="images/content/author-icon.png" alt=""></a>
+                                    <a href="#"><span class="author-name">AazzTech</span></a>
+                                    <div class="theme-icon" style="background-image: url('images/content/wp-icon.png')"></div>
+                                    <span class="theme-name">WordPress</span>
                                 </div>
+
                                 <p class="card__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
                             </div>
                             <div class="card__content-footer">
@@ -265,12 +296,14 @@
                             </div>
                             <div class="card__content-body">
                                 <a class="card__content-title">Marketify Coffee Shop</a>
-                                <div class="card__content-subtitle">
-                                    <div class="subtitle__avatar" style="background-image: url('images/author-icon.png'); width: 30px; height: 30px; margin-right: 4px;"></div>
-                                    <span class="name">EchoTheme</span>
-                                    <div class="subtitle__theme-icon" style="background-image: url('images/content/psd-icon.png'); width: 16px; height: 16px; margin: 0 4px 0 20px;"></div>
-                                    <span class="subtitle__theme-name">PSD</span>
+
+                                <div class="product__item-icons">
+                                    <a class="avatar" href="#"><img src="images/content/author-icon.png" alt=""></a>
+                                    <a href="#"><span class="author-name">AazzTech</span></a>
+                                    <div class="theme-icon" style="background-image: url('images/content/wp-icon.png')"></div>
+                                    <span class="theme-name">WordPress</span>
                                 </div>
+
                                 <p class="card__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
                             </div>
                             <div class="card__content-footer">
@@ -292,12 +325,14 @@
                             </div>
                             <div class="card__content-body">
                                 <a class="card__content-title">Bryson - Portfolio Template</a>
-                                <div class="card__content-subtitle">
-                                    <div class="subtitle__avatar" style="background-image: url('images/author-icon.png'); width: 30px; height: 30px; margin-right: 4px;"></div>
-                                    <span class="name">Artcorner</span>
-                                    <div class="subtitle__theme-icon" style="background-image: url('images/content/html-icon.png'); width: 16px; height: 16px; margin: 0 4px 0 20px;"></div>
-                                    <span class="subtitle__theme-name">HTML</span>
+
+                                <div class="product__item-icons">
+                                    <a class="avatar" href="#"><img src="images/content/author-icon.png" alt=""></a>
+                                    <a href="#"><span class="author-name">AazzTech</span></a>
+                                    <div class="theme-icon" style="background-image: url('images/content/wp-icon.png')"></div>
+                                    <span class="theme-name">WordPress</span>
                                 </div>
+
                                 <p class="card__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
                             </div>
                             <div class="card__content-footer">
@@ -327,12 +362,14 @@
                             </div>
                             <div class="card__content-body">
                                 <a class="card__content-title">E-commerce Shoping Cart</a>
-                                <div class="card__content-subtitle">
-                                    <div class="subtitle__avatar" style="background-image: url('images/author-icon.png'); width: 30px; height: 30px; margin-right: 4px;"></div>
-                                    <span class="name">Design-Hub</span>
-                                    <div class="subtitle__theme-icon" style="background-image: url('images/content/wp-icon.png'); width: 16px; height: 16px; margin: 0 4px 0 20px;"></div>
-                                    <span class="subtitle__theme-name">Plugin</span>
+
+                                <div class="product__item-icons">
+                                    <a class="avatar" href="#"><img src="images/content/author-icon.png" alt=""></a>
+                                    <a href="#"><span class="author-name">AazzTech</span></a>
+                                    <div class="theme-icon" style="background-image: url('images/content/wp-icon.png')"></div>
+                                    <span class="theme-name">WordPress</span>
                                 </div>
+
                                 <p class="card__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
                             </div>
                             <div class="card__content-footer">
@@ -362,12 +399,14 @@
                             </div>
                             <div class="card__content-body">
                                 <a class="card__content-title">Marketify Coffee Shop</a>
-                                <div class="card__content-subtitle">
-                                    <div class="subtitle__avatar" style="background-image: url('images/author-icon.png'); width: 30px; height: 30px; margin-right: 4px;"></div>
-                                    <span class="name">AazzTech</span>
-                                    <div class="subtitle__theme-icon" style="background-image: url('images/content/psd-icon.png'); width: 16px; height: 16px; margin: 0 4px 0 20px;"></div>
-                                    <span class="subtitle__theme-name">PSD</span>
+
+                                <div class="product__item-icons">
+                                    <a class="avatar" href="#"><img src="images/content/author-icon.png" alt=""></a>
+                                    <a href="#"><span class="author-name">AazzTech</span></a>
+                                    <div class="theme-icon" style="background-image: url('images/content/psd-icon.png')"></div>
+                                    <span class="theme-name">PSD</span>
                                 </div>
+
                                 <p class="card__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
                             </div>
                             <div class="card__content-footer">
@@ -389,12 +428,14 @@
                             </div>
                             <div class="card__content-body">
                                 <a class="card__content-title">Bryson - Portfolio Template</a>
-                                <div class="card__content-subtitle">
-                                    <div class="subtitle__avatar" style="background-image: url('images/author-icon.png'); width: 30px; height: 30px; margin-right: 4px;"></div>
-                                    <span class="name">Coder-Lab</span>
-                                    <div class="subtitle__theme-icon" style="background-image: url('images/content/html-icon.png'); width: 16px; height: 16px; margin: 0 4px 0 20px;"></div>
-                                    <span class="subtitle__theme-name">HTML</span>
+
+                                <div class="product__item-icons">
+                                    <a class="avatar" href="#"><img src="images/content/author-icon.png" alt=""></a>
+                                    <a href="#"><span class="author-name">Coder-Lab</span></a>
+                                    <div class="theme-icon" style="background-image: url('images/content/html-icon.png')"></div>
+                                    <span class="theme-name">HTML</span>
                                 </div>
+
                                 <p class="card__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
                             </div>
                             <div class="card__content-footer">
@@ -441,12 +482,14 @@
                     </div>
                     <div class="card__content-body">
                         <a class="card__content-title">E-commerce Shoping Cart</a>
-                        <div class="card__content-subtitle">
-                            <div class="subtitle__avatar" style="background-image: url('images/author-icon.png'); width: 30px; height: 30px; margin-right: 4px;"></div>
-                            <span class="name">Theme-Valley</span>
-                            <div class="subtitle__theme-icon" style="background-image: url('images/content/wp-icon.png'); width: 16px; height: 16px; margin: 0 4px 0 20px;"></div>
-                            <span class="subtitle__theme-name">WordPress</span>
+
+                        <div class="product__item-icons">
+                            <a class="avatar" href="#"><img src="images/content/author-icon.png" alt=""></a>
+                            <a href="#"><span class="author-name">AazzTech</span></a>
+                            <div class="theme-icon" style="background-image: url('images/content/html-icon.png')"></div>
+                            <span class="theme-name">HTML</span>
                         </div>
+
                         <p class="card__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
                     </div>
                     <div class="card__content-footer">
@@ -476,12 +519,14 @@
                     </div>
                     <div class="card__content-body">
                         <a class="card__content-title">Marketify Coffee Shop</a>
-                        <div class="card__content-subtitle">
-                            <div class="subtitle__avatar" style="background-image: url('images/author-icon.png'); width: 30px; height: 30px; margin-right: 4px;"></div>
-                            <span class="name">AazzTech</span>
-                            <div class="subtitle__theme-icon" style="background-image: url('images/content/psd-icon.png'); width: 16px; height: 16px; margin: 0 4px 0 20px;"></div>
-                            <span class="subtitle__theme-name">PSD</span>
+
+                        <div class="product__item-icons">
+                            <a class="avatar" href="#"><img src="images/content/author-icon.png" alt=""></a>
+                            <a href="#"><span class="author-name">AazzTech</span></a>
+                            <div class="theme-icon" style="background-image: url('images/content/html-icon.png')"></div>
+                            <span class="theme-name">PSD</span>
                         </div>
+
                         <p class="card__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
                     </div>
                     <div class="card__content-footer">
@@ -503,12 +548,14 @@
                     </div>
                     <div class="card__content-body">
                         <a class="card__content-title">Bryson - Portfolio Template</a>
-                        <div class="card__content-subtitle">
-                            <div class="subtitle__avatar" style="background-image: url('images/author-icon.png'); width: 30px; height: 30px; margin-right: 4px;"></div>
-                            <span class="name">Coder-Lab</span>
-                            <div class="subtitle__theme-icon" style="background-image: url('images/content/html-icon.png'); width: 16px; height: 16px; margin: 0 4px 0 20px;"></div>
-                            <span class="subtitle__theme-name">HTML</span>
+
+                        <div class="product__item-icons">
+                            <a class="avatar" href="#"><img src="images/content/author-icon.png" alt=""></a>
+                            <a href="#"><span class="author-name">Coder-Lab</span></a>
+                            <div class="theme-icon" style="background-image: url('images/content/html-icon.png')"></div>
+                            <span class="theme-name">HTML</span>
                         </div>
+
                         <p class="card__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
                     </div>
                     <div class="card__content-footer">
@@ -538,12 +585,14 @@
                     </div>
                     <div class="card__content-body">
                         <a class="card__content-title">E-commerce Shoping Cart</a>
-                        <div class="card__content-subtitle">
-                            <div class="subtitle__avatar" style="background-image: url('images/author-icon.png'); width: 30px; height: 30px; margin-right: 4px;"></div>
-                            <span class="name">Theme-Valley</span>
-                            <div class="subtitle__theme-icon" style="background-image: url('images/content/wp-icon.png'); width: 16px; height: 16px; margin: 0 4px 0 20px;"></div>
-                            <span class="subtitle__theme-name">WordPress</span>
+
+                        <div class="product__item-icons">
+                            <a class="avatar" href="#"><img src="images/content/author-icon.png" alt=""></a>
+                            <a href="#"><span class="author-name">Theme-Valley</span></a>
+                            <div class="theme-icon" style="background-image: url('images/content/html-icon.png')"></div>
+                            <span class="theme-name">WordPress</span>
                         </div>
+
                         <p class="card__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
                     </div>
                     <div class="card__content-footer">
@@ -573,12 +622,14 @@
                     </div>
                     <div class="card__content-body">
                         <a class="card__content-title">E-commerce Shoping Cart</a>
-                        <div class="card__content-subtitle">
-                            <div class="subtitle__avatar" style="background-image: url('images/author-icon.png'); width: 30px; height: 30px; margin-right: 4px;"></div>
-                            <span class="name">Theme-Valley</span>
-                            <div class="subtitle__theme-icon" style="background-image: url('images/content/wp-icon.png'); width: 16px; height: 16px; margin: 0 4px 0 20px;"></div>
-                            <span class="subtitle__theme-name">WordPress</span>
+
+                        <div class="product__item-icons">
+                            <a class="avatar" href="#"><img src="images/content/author-icon.png" alt=""></a>
+                            <a href="#"><span class="author-name">Theme-Valley</span></a>
+                            <div class="theme-icon" style="background-image: url('images/content/html-icon.png')"></div>
+                            <span class="theme-name">WordPress</span>
                         </div>
+
                         <p class="card__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
                     </div>
                     <div class="card__content-footer">
@@ -608,12 +659,14 @@
                     </div>
                     <div class="card__content-body">
                         <a class="card__content-title">E-commerce Shoping Cart</a>
-                        <div class="card__content-subtitle">
-                            <div class="subtitle__avatar" style="background-image: url('images/author-icon.png'); width: 30px; height: 30px; margin-right: 4px;"></div>
-                            <span class="name">Theme-Valley</span>
-                            <div class="subtitle__theme-icon" style="background-image: url('images/content/wp-icon.png'); width: 16px; height: 16px; margin: 0 4px 0 20px;"></div>
-                            <span class="subtitle__theme-name">WordPress</span>
+
+                        <div class="product__item-icons">
+                            <a class="avatar" href="#"><img src="images/content/author-icon.png" alt=""></a>
+                            <a href="#"><span class="author-name">AazzTech</span></a>
+                            <div class="theme-icon" style="background-image: url('images/content/psd-icon.png')"></div>
+                            <span class="theme-name">PSD</span>
                         </div>
+
                         <p class="card__content-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
                     </div>
                     <div class="card__content-footer">
@@ -673,8 +726,8 @@
         <div class="container">
             <div class="choose__inner">
                 <div class="choose__header">
-                    <div class="choose__header-title">Why Choose <span>MartPlace</span></div>
-                    <div class="choose__header-text">Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est laborum dolo rumes fugats untras.</div>
+                    <div class="choose__header-title title">Why Choose <span>MartPlace</span></div>
+                    <div class="choose__header-text text">Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est laborum dolo rumes fugats untras.</div>
                 </div>
                 <div class="choose__cards">
                     <div class="card__item">
@@ -723,6 +776,302 @@
             </div>
         </div>
     </section>
+
+    <section class="fluid">
+        <div class="fluid__inner">
+            <div class="fluid__inner-item" style="background-image: url('images/sell-bg.jpg')">
+                <img src="images/content/sell-icon.png" alt="">
+                <div class="choose__header-title title">Sell Your Products</div>
+                <div class="choose__header-text text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diamcongue is laoreet elit metus.</div>
+                <div class="fill-btn fluid-btn">
+                    <a href="#">Become an Author</a>
+                </div>
+            </div>
+
+            <div class="fluid__inner-item" style="background-image: url('images/buy-bg.jpg')">
+                <img src="images/content/buy-icon.png" alt="">
+                <div class="choose__header-title title">Start Shopping Today</div>
+                <div class="choose__header-text text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diamcongue is laoreet elit metus.</div>
+                <div class="fluid-btn fill-btn">
+                    <a href="#">Start Shopping</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedback section">
+        <div class="container">
+            <div class="feddback__inner">
+                <div class="feedback__inner-title title">Our Clients <span>Feedback</span></div>
+                <div class="feedback__inner-text text">
+                    Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est laborum dolo rumes fugats untras.
+                </div>
+                <div class="feedback__inner-cards">
+
+                    <div class="feedback__card-item">
+                        <div class="feedback__card-header">
+                            <div class="card__header-author">
+                                <a class="author-image" href="#">
+                                    <img src="images/content/author-icon-grey.png" alt="">
+                                </a>
+
+                                <div class="avatar-description">
+                                    <a href="#" class="author-name">Taofiqul Hakim</a>
+                                    <div class="author-prof">Product Designer</div>
+                                </div>
+                            </div>
+                            <img src="images/content/bubble-icon.svg" style="width: 67px;height: 61px;" alt="">
+                        </div>
+                        <div class="feedback__card-text text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent the pharetra, justo
+                            ut scelerisque.</div>
+                    </div>
+
+                    <div class="feedback__card-item">
+                        <div class="feedback__card-header">
+                            <div class="card__header-author">
+
+                                <a class="author-image" href="#">
+                                    <img src="images/content/author-icon-grey.png" alt="">
+                                </a>
+
+                                <div class="avatar-description">
+                                    <a href="#" class="author-name">Saifullah Al Murtafee</a>
+                                    <div class="author-prof">Product Designer</div>
+                                </div>
+                            </div>
+                            <img src="images/content/bubble-icon.svg" style="width: 67px;height: 61px;" alt="">
+                        </div>
+                        <div class="feedback__card-text text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent the pharetra, justo
+                            ut scelerisque.</div>
+                    </div>
+                </div>
+                <div class="fill-btn feedback-btn">
+                    <a href="#">View All Reviews</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news section">
+        <div class="container">
+            <div class="news__inner">
+                <div class="news__title title">Latest <span>News</span></div>
+                <div class="news__text text">
+                    Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est laborum dolo rumes fugats untras.
+                </div>
+                <div class="news__cards">
+
+                    <div class="news__card">
+                        <a href="#" class="news__card-image">
+                            <img src="images/content/news-bg.jpg" alt="">
+                        </a>
+                        <div class="news__card-body">
+                            <div class="news__card-content">
+                                <a class="news__card-title">Web Design Trends in 2017</a>
+                                <div class="news__card-text text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</div>
+                            </div>
+                        </div>
+                        <div class="news__card-footer">
+                            <div class="news__card-date">24 Feb 2017</div>
+                            <div class="news__card-info">
+                                <div class="news__card-comments">45</div>
+                                <div class="news__card-view">345</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="news__card">
+                        <a href="#" class="news__card-image">
+                            <img src="images/content/news2-bg.jpg" alt="">
+                        </a>
+                        <div class="news__card-body">
+                            <div class="news__card-content">
+                                <a class="news__card-title">The best advices to start your 
+                                    own project</a>
+                                <div class="news__card-text text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque</div>
+                            </div>
+                        </div>
+                        <div class="news__card-footer">
+                            <div class="news__card-date">15 Mar 2017</div>
+                            <div class="news__card-info">
+                                <div class="news__card-comments">45</div>
+                                <div class="news__card-view">345</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="news__card">
+                        <a href="#" class="news__card-image">
+                            <img src="images/content/news3-bg.jpg" alt="">
+                        </a>
+                        <div class="news__card-body">
+                            <div class="news__card-content">
+                                <a class="news__card-title">Best Related Post Plugin</a>
+                                <div class="news__card-text text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</div>
+                            </div>
+                        </div>
+                        <div class="news__card-footer">
+                            <div class="news__card-date">20 Dec 2016</div>
+                            <div class="news__card-info">
+                                <div class="news__card-comments">45</div>
+                                <div class="news__card-view">345</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="guarantee">
+        <div class="container">
+            <div class="guarantee__inner">
+                <div class="guarantee__inner-item">
+                    <img src="images/content/money-icon.png" alt="">
+                    <div class="guarantee__inner-title title">30 Days Back <span>Guarantee</span></div>
+                </div>
+                <div class="guarantee__inner-item">
+                    <img src="images/content/support-icon.png" alt="">
+                    <div class="guarantee__inner-title title">Fast and Friendly <span>Support</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="join">
+        <div class="container">
+            <div class="join__inner">
+                <div class="join__inner-title title">Ready to Join Our Marketplace!</div>
+                <div class="join__inner-text text">Over 25,000 designers and developers trust the MartPlace.</div>
+                <div class="join__inner-btn fill-btn">
+                    <a href="#">Join Us Today</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="container">
+                <div class="footer__inner">
+
+                    <div class="footer__col footer__col-contacts">
+                        <div class="footer__col-logo">
+                            <a href="#">
+                                <img src="images/logo-mini.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer__col-text text">
+                            Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the mattis, leo quam.
+                        </div>
+                        <a href="tel:67898752235" class="footer__info">
+                            Phone: +6789-875-2235
+                        </a>
+                        <a href="email:support@aazztech.com" class="footer__info footer__info-email">
+                            support@aazztech.com
+                        </a>
+                        <div class="footer__info footer__info-adress">
+                            202 New Hampshire Avenue Northwest #100, New York-2573
+                        </div>
+                    </div>
+
+                    <div class="footer__col footer__col-menu">
+                        <div class="footer__col-title">Our Company</div>
+                        <ul class="footer__col-list">
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">How It Work</a>
+                            </li>
+                            <li>
+                                <a href="#">Affiliates</a>
+                            </li>
+                            <li>
+                                <a href="#">Testimonials</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Copyright Notice</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col footer__col-menu">
+                        <div class="footer__col-title">Help Support</div>
+                        <ul class="footer__col-list">
+                            <li>
+                                <a href="#">Support Forum</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Support Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Refund Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQs</a>
+                            </li>
+                            <li>
+                                <a href="#">Buyers Faq</a>
+                            </li>
+                            <li>
+                                <a href="#">Sellers Faq</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col footer__col-subscribe">
+                        <div class="footer__col-title">Newsletter</div>
+                        <div class="footer__col-text text">Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam!</div>
+                        <div class="footer__form">
+                            <form action="">
+                                <input type="text" placeholder="Enter email">
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
+                        <ul class="footer__col-social">
+                            <li class="social-item">
+                                <a href="#"><img src="images/icons/facebook-icon.png" alt=""></a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#"><img src="images/icons/twitter-icon.png" alt=""></a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#"><img src="images/icons/google-icon.png" alt=""></a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#"><img src="images/icons/pinterest-icon.png" alt=""></a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#"><img src="images/icons/linkedin-icon.png" alt=""></a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#"><img src="images/icons/dribble-icon.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer__copy">
+                <div class="container">
+                    <div class="footer__copy-text">
+                        ©2017 <span>MartPlace</span>. All rights reserved. Created by <span>AazzTech</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
