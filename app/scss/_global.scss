@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    height: 100%;
 }
 
 *,
@@ -41,10 +42,25 @@ li {
 }
 
 body {
+    height: 100%;
     font-family: "Quicksand";
     font-size: 16px;
     font-weight: 400;
     color: $text-color;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
 }
 
 .container {
@@ -88,4 +104,32 @@ body {
     max-width: 672px;
     margin: 0 auto;
     line-height: 30px;
+}
+
+.breadcrumbs {
+    padding-top: 35px;
+    &__list {
+        li {
+            display: inline-block;
+            position: relative;
+            &+li {
+                padding-left: 24px;
+                &::before {
+                    position: absolute;
+                    content: '/';
+                    color: #fff;
+                    left: 8px;
+                }
+            }
+            &:last-child {
+                a,
+                span {
+                    color: #bfcad7;
+                }
+            }
+        }
+        a {
+            color: #fff;
+        }
+    }
 }

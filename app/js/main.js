@@ -1,6 +1,5 @@
 $(function() {
 
-    var mixer = mixitup('.cards__inner');
 
     $('.rate-stars').rateYo({
         rating: 4.5,
@@ -27,5 +26,31 @@ $(function() {
         nextArrow: '<img class="slider-arrows slider-arrows__right" src="images/icons/next-arrow.svg" alt=""></img>',
     });
 
+
+    $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 350,
+        from: 30,
+        to: 300,
+        prefix: "$",
+    });
+
+    // var containerEl = document.querySelector('.cards__inner');
+    // var mixer;
+
+
+    // if (containerEl) {
+    //     mixer = mixitup(containerEl, {
+    //         selectors: {
+    //             control: '[data-mixitup-control]'
+    //         },
+    //         load: {
+    //             filter: '.cards__inner'
+    //         }
+    //     });
+    // }
+
+    var mixer = mixitup('.cards__inner');
 
 });
