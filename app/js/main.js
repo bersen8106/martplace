@@ -27,7 +27,7 @@ $(function() {
     });
 
 
-    $(".js-range-slider").ionRangeSlider({
+    $('.js-range-slider').ionRangeSlider({
         type: "double",
         min: 0,
         max: 350,
@@ -35,6 +35,23 @@ $(function() {
         to: 300,
         prefix: "$",
     });
+
+    $('.product-list-view').on('click', function() {
+        $('.mini-card__item').addClass('list');
+        $('.list-cards__wrap').addClass('list');
+        $('.product-list-view').addClass('active');
+        $('.product-grid-view').removeClass('active');
+    });
+    $('.product-grid-view').on('click', function() {
+        $('.mini-card__item').removeClass('list');
+        $('.list-cards__wrap').removeClass('list');
+        $('.product-grid-view').addClass('active');
+        $('.product-list-view').removeClass('active');
+    });
+
+    // $('.user__name').on('click', function() {
+    //     $('.user__menu').toggleClass('user__menu--off');
+    // });
 
     // var containerEl = document.querySelector('.cards__inner');
     // var mixer;
