@@ -49,6 +49,9 @@ $(function() {
         $('.product-list-view').removeClass('active');
     });
 
+    $('.menu__btn').on('click', function() {
+        $('.menu__list').slideToggle();
+    });
     // $('.user__name').on('click', function() {
     //     $('.user__menu').toggleClass('user__menu--off');
     // });

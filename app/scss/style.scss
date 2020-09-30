@@ -213,7 +213,6 @@
     &-name {
         font-weight: 500;
         cursor: pointer;
-        span {}
     }
     &-image {
         margin-left: 10px;
@@ -1597,7 +1596,8 @@
         background-position: center;
         position: absolute;
         left: 0;
-        top: 17px;
+        top: 50%;
+        transform: translateY(-50%);
         width: 18px;
         height: 17px;
     }
@@ -2152,3 +2152,5 @@
         }
     }
 }
+
+@import 'media';
