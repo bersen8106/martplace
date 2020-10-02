@@ -418,7 +418,6 @@
     &:hover {
         .user__menu,
         .notification__menu {
-            // display: block;
             visibility: visible;
             transform: translateY(0);
             opacity: 1;
@@ -433,7 +432,6 @@
 }
 
 .user__menu {
-    // display: none;
     visibility: hidden;
     opacity: 0;
     transform: translateY(-10px);
@@ -555,6 +553,19 @@
     }
 }
 
+.header__btn-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/icons/user-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #eef1f3;
+    z-index: 2;
+}
+
 //-----------dropdown-menu-----------//
 .menu__dropdown {
     position: relative;
@@ -567,7 +578,7 @@
     }
 }
 
-.large-menu {
+.large__menu {
     left: -460px;
     min-width: 1140px;
     display: flex;

@@ -52,6 +52,14 @@ $(function() {
     $('.menu__btn').on('click', function() {
         $('.menu__list').slideToggle();
     });
+
+    $('.menu__dropdown-col-title').on('click', function() {
+        $('.menu__dropdown-inner').slideToggle();
+    });
+
+    $('.header__btn-menu').on('click', function() {
+        $('.header__box').toggleClass('active');
+    });
     // $('.user__name').on('click', function() {
     //     $('.user__menu').toggleClass('user__menu--off');
     // });

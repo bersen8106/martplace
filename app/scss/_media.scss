@@ -1,3 +1,14 @@
+@media(max-width: 1152px) {
+    .large__menu {
+        display: block;
+        min-width: 520px;
+        left: -200px;
+    }
+    .menu__dropdown-inner {
+        justify-content: start;
+    }
+}
+
 @media(max-width: 992px) {
     .footer__inner {
         flex-wrap: wrap;
@@ -13,8 +24,48 @@
 }
 
 @media(max-width: 930px) {
+    .large__menu {
+        display: block;
+        min-width: 520px;
+        left: 0;
+    }
+    .large__menu-col {
+        margin-right: 0;
+    }
+    .menu__dropdown-inner {
+        margin-bottom: 20px;
+    }
+    .menu__inner {
+        position: relative;
+    }
     .menu__list {
         display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 81px;
+        background-color: #fff;
+        text-align: center;
+        padding-bottom: 30px;
+        a {
+            display: block;
+            padding: 10px 0;
+            border-bottom: 1px solid #333;
+        }
+        li {
+            display: block;
+            &+li {
+                margin-left: 0;
+            }
+        }
+    }
+    .menu__dropdown-list {
+        a {
+            display: block;
+            padding: 10px 0;
+            border-bottom: 1px solid transparent;
+            text-align: left;
+        }
     }
     .menu__btn {
         display: block;
@@ -64,9 +115,56 @@
             right: 130px;
         }
     }
+    .menu__dropdown-col-title {
+        text-align: center;
+    }
+}
+
+@media(max-width: 550px) {
+    .header__top-inner {
+        position: relative;
+    }
+    .header__box {
+        position: absolute;
+        left: 0;
+        background-color: #eef1f3;
+        transition: all .5s;
+        height: 100px;
+        &.active {
+            left: 100%;
+            right: 0;
+            z-index: 1;
+            overflow: hidden;
+        }
+    }
+    .header__btn-menu {
+        display: block;
+    }
+    .large__menu {
+        min-width: 460px;
+    }
+    .menu__dropdown-inner {
+        div+div {
+            margin-left: 30px;
+            padding-right: 0;
+        }
+    }
 }
 
 @media(max-width: 480px) {
+    .header__menu-input {
+        width: 260px;
+    }
+    .large__menu {
+        min-width: 360px;
+    }
+    .menu__dropdown-inner {
+        display: block;
+        div+div {
+            margin-left: 0;
+            padding-right: 0;
+        }
+    }
     .footer__col {
         min-width: 100%;
     }
@@ -74,6 +172,12 @@
         &+& {
             margin-left: 0;
         }
+    }
+}
+
+@media(max-width: 380px) {
+    .large__menu {
+        min-width: 260px;
     }
 }
 
