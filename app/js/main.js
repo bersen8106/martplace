@@ -41,13 +41,17 @@ $(function() {
         $('.list-cards__wrap').addClass('list');
         $('.product-list-view').addClass('active');
         $('.product-grid-view').removeClass('active');
+        $('.favorite-cards__inner').removeClass('active');
     });
     $('.product-grid-view').on('click', function() {
         $('.mini-card__item').removeClass('list');
         $('.list-cards__wrap').removeClass('list');
-        $('.product-grid-view').addClass('active');
         $('.product-list-view').removeClass('active');
+        $('.product-grid-view').addClass('active');
+        $('.favorite-cards__inner').addClass('active');
     });
+
+
 
     $('.menu__btn').on('click', function() {
         $('.menu__list').slideToggle();
