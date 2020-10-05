@@ -2835,10 +2835,15 @@
 .login__title {
     font-size: 26px;
     color: #000;
+    margin-bottom: 10px;
+}
+
+.login__text {
+    line-height: 28px;
 }
 
 .login__body {
-    padding: 28px 50px 60px;
+    padding: 25px 50px 60px;
 }
 
 .login__form {
@@ -2846,14 +2851,14 @@
 }
 
 .input__title {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     font-weight: 500;
     color: #000;
 }
 
 .login__form-item {
     &+div {
-        margin-top: 30px;
+        margin-top: 28px;
     }
 }
 
@@ -2868,7 +2873,7 @@
 .login-btn {
     margin: 0;
     left: 0;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
     a {
         font-size: 15px;
         padding: 16px 0;
