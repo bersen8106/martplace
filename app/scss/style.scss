@@ -2933,7 +2933,7 @@
         background-size: cover;
     }
     &-header {
-        padding: 40px 30px 30px;
+        padding: 35px 30px 30px;
         border-bottom: 1px solid #ececec;
     }
     &-title {
@@ -2941,6 +2941,11 @@
         font-weight: 500;
         color: $blue;
         margin-bottom: 20px;
+    }
+    &-text {
+        &.text {
+            margin-bottom: 22px;
+        }
     }
     &-info {
         display: flex;
@@ -2956,7 +2961,7 @@
         }
     }
     &-body {
-        padding: 30px 30px 40px;
+        padding: 20px 30px 40px;
     }
     &-text {
         text-align: left;
@@ -3080,6 +3085,42 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+//-------recovery-pass.html-----------//
+.recovery {
+    background-color: #eff1f5;
+    padding: 70px 0 120px;
+    &-text {
+        text-align: left;
+    }
+}
+
+//---------terms.html----------//
+.terms {
+    background-color: #eff1f5;
+    padding: 70px 0 120px;
+}
+
+.terms__inner {
+    background-color: #fff;
+    text-align: left;
+    padding-bottom: 80px;
+}
+
+.terms__title {
+    font-size: 22px;
+    text-align: left;
+    padding: 31px 30px 30px;
+}
+
+.terms__text {
+    line-height: 30px;
+    padding: 20px 30px;
+}
+
+.terms__header {
+    padding: 0;
 }
 
 @import 'media';
