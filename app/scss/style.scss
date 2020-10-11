@@ -138,9 +138,6 @@
     }
 }
 
-// .notification-item {
-//     align-items: start;
-// }
 .notification-avatar {
     width: 40px;
     height: 40px;
@@ -1392,7 +1389,6 @@
 //-------------Sell / Start Section-------------------//
 .fluid__inner {
     display: flex;
-    // min-height: 560px;
 }
 
 .fluid__inner-item {
@@ -2578,9 +2574,6 @@
 .info-item {
     display: flex;
     justify-content: space-between;
-    &+div {
-        // margin-top: 24px;
-    }
     &__title {
         max-width: 110px;
         font-size: 15px;
@@ -2949,7 +2942,7 @@
     }
     &-info {
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
         align-items: center;
         div+div {
             margin-left: 30px;
@@ -3121,6 +3114,177 @@
 
 .terms__header {
     padding: 0;
+}
+
+//---------plan.html-----------//
+.plan {
+    background-color: #eff1f5;
+}
+
+.plan__header {
+    margin-bottom: 60px;
+}
+
+.plan__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.plan__item {
+    background-color: #fff;
+    max-width: 360px;
+    width: 100%;
+    border-radius: 4px;
+    border-top: 3px solid #ff6a6c;
+    padding: 0 30px;
+    &-header {
+        font-size: 24px;
+        font-weight: 500;
+        color: #000;
+        text-align: center;
+        padding: 23px 0;
+        border-bottom: 1px solid #ececec;
+    }
+    &-body {
+        padding: 25px 0 30px;
+    }
+    &-price {
+        font-size: 36px;
+        color: #000;
+        text-align: center;
+        span {
+            position: relative;
+            padding: 0 60px 0 10px;
+            &::before {
+                position: absolute;
+                content: '$';
+                font-size: 18px;
+                color: #000;
+                left: 0;
+                top: 10px;
+            }
+            &::after {
+                position: absolute;
+                content: '/month';
+                font-size: 18px;
+                bottom: 7px;
+            }
+        }
+    }
+    &-list {
+        padding: 30px 0 30px 0;
+        line-height: 36px;
+        li {
+            position: relative;
+            padding-left: 20px;
+            &::before {
+                position: absolute;
+                content: '';
+                background-image: url(../images/icons/list-marker.svg);
+                width: 7px;
+                height: 7px;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        span {
+            font-weight: 500;
+            color: #000;
+        }
+    }
+    &-btn {
+        background-color: #ff6a6c;
+        border-radius: 4px;
+        a {
+            padding: 17px 0;
+            color: #fff;
+            font-size: 18px;
+            display: block;
+            text-align: center;
+        }
+    }
+    &.blue-top {
+        border-top: 3px solid #0674ed;
+        & .blue-btn {
+            background-color: #0674ed;
+        }
+    }
+    &.yellow-top {
+        border-top: 3px solid #feb71d;
+    }
+    & .yellow-btn {
+        background-color: #feb71d;
+    }
+}
+
+//-------------works.html---------------//
+.works-top {
+    padding: 0;
+    text-align: center;
+    background-image: url(../images/gradient-works.jpg);
+}
+
+.works-top__header {
+    padding: 70px 0 30px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.works-top__header-title {
+    line-height: 50px;
+    font-weight: 500;
+    margin: 0;
+    span {
+        font-weight: 300;
+    }
+}
+
+.works-content__item {
+    &--grey {
+        background-color: #eff1f5;
+        img {
+            order: 2;
+        }
+    }
+}
+
+.works-content__item-inner {
+    padding: 98px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.works-content__info-title {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.works-content__info-text {
+    max-width: 450px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.works-content__info-btn {
+    margin: 0;
+    max-width: 170px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    a {
+        transition: all .3s;
+        padding: 16px 0;
+        color: $blue;
+    }
+    &:hover {
+        background-color: $blue;
+        a {
+            color: #fff;
+        }
+    }
 }
 
 @import 'media';
