@@ -555,58 +555,64 @@
                         </div>
                     </div>
             </header>
-            <section class="section single-product__top">
+            <section class="gradient-top contact-top">
                 <div class="container">
-                    <div class="breadcrumbs">
-                        <ul class="breadcrumbs__list">
-                            <li>
-                                <a href="#">Home</a>
-                            </li>
-                            <li>
-                                <span href="#">Login</span>
-                            </li>
-                        </ul>
+                    <div class="contact-top__inner">
+                        <div class="contact-top__title title">Contact Us</div>
+                        <div class="contact-top__subtitle">You came to the right place</div>
                     </div>
-                    <div class="single-product__top-name">
-                        Login
+                </div>
+            </section>
+            <section class="section help">
+                <div class="container">
+                    <div class="help__header">
+                        <div class="plan__title title">How can We <span>Help</span></div>
+                        <div class="plan__text text">Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est laborum dolo rumes fugats untras.</div>
+                    </div>
+                    <div class="contact__cards">
+                        <div class="contact__cards-item">
+                            <img src="images/content/marker-blue.svg" alt="">
+                            <div class="contact__cards-item-title">Office Address</div>
+                            <div class="contact__cards-item-text text">202 New Hampshire Avenue Northwest #100, New York-2573</div>
+                        </div>
+                        <div class="contact__cards-item">
+                            <img src="images/content/phone-blue.svg" alt="">
+                            <div class="contact__cards-item-title">Phone Number</div>
+                            <div class="contact__cards-item-text text">1-800-643-4500 <br> 1-800-643-4500</div>
+                        </div>
+                        <div class="contact__cards-item">
+                            <img src="images/content/inbox-blue.svg" alt="">
+                            <div class="contact__cards-item-title">Email Address</div>
+                            <div class="contact__cards-item-text text">support@aszztech.com support@aazztech.com</div>
+                        </div>
+                    </div>
+                    <div class="messages">
+                        <div class="messages__header">
+                            <div class="messages__header-title">Leave Your Messages</div>
+                        </div>
+                        <div class="messages__body">
+                            <form>
+                                <div class="messages__body-row">
+                                    <input class="messages__body-input" placeholder="Name" type="text" required>
+                                    <input class="messages__body-input" placeholder="Email" type="text" required>
+                                </div>
+                                <div class="messages__body-row">
+                                    <input class="messages__body-input" placeholder="Subject" type="text" required>
+                                    <input class="messages__body-input" placeholder="Phone" type="text" required>
+                                </div>
+                                <textarea class="messages__body-input messages__body-area" placeholder="Your text here..." name="" id="" cols="30" rows="10" required></textarea>
+                                <button class="fill-btn login-btn send-btn" type="submit">Send Request</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section class="login">
-                <div class="container">
-                    <div class="login__inner">
-                        <div class="login__header">
-                            <div class="login__title">Welcome Back</div>
-                            <div class="login__text">You can sign in with your username</div>
-                        </div>
-                        <div class="login__body">
-                            <form class="login__form">
-                                <div class="login__form-item">
-                                    <div class="input__title">Username</div>
-                                    <input class="login__form-input" placeholder="Enter your username..." id="username" type="text" required>
-                                </div>
-                                <div class="login__form-item">
-                                    <div class="input__title">Password</div>
-                                    <input class="login__form-input" placeholder="Enter your password..." id="password" type="password" required>
-                                </div>
-                                <div class="remember-me">
-                                    <input class="radio-btn" type="checkbox" id="remember-me" name="remember-me">
-                                    <label class="radio-title" for="remember-me">Remember Me</label>
-                                </div>
-                                <button class="fill-btn login-btn" type="submit">Login Now</button>
-                            </form>
-                            <div class="login__info">
-                                <div class="login__info-item">
-                                    Last your <a href="#">username</a> or <a href="#">password</a>
-                                </div>
-                                <div class="login__info-item">
-                                    Don't have an <a href="#">account?</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <section class="map">
+                <div class="map" id="map"></div>
+
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.1583091352!2d-74.11976373946234!3d40.69766374859258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!5e0!3m2!1sru!2sru!4v1602481043193!5m2!1sru!2sru"
+                    width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
             </section>
 
             </div>
@@ -736,6 +742,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="js/libs.min.js"></script>
         <script src="js/main.js"></script>
+        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGF0U6N98Dro8hdwJhhNvVe9lSwdU9zJM&callback=initMap">
+        </script>
 </body>
 
 </html>

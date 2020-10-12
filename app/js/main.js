@@ -91,6 +91,17 @@ $(function() {
     //         }
     //     });
     // }
+    let map;
+    let marker;
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: 59.510383, lng: 16.613476 },
+        zoom: 8
+    });
+    marker = new google.maps.Marker({
+        map: map,
+        position: { lat: 59.360558, lng: 18.040349 },
+        icon: '../images/icons/map-marker.png',
+    });
 
     var mixer = mixitup('.cards__inner');
 
