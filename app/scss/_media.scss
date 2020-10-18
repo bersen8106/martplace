@@ -42,10 +42,18 @@
             flex-basis: calc(50% - 30px);
             max-width: 400px;
         }
+        .news__card {
+            flex-basis: calc(50% - 20px);
+            max-width: 400px;
+        }
         .products__inner-btn {
             button+button {
                 margin-left: 0;
             }
+        }
+        .guarantee__inner {
+            flex-direction: column;
+            align-items: center;
         }
         //------------//
         .product-page__inner {
@@ -73,6 +81,10 @@
                 margin-bottom: 5px;
             }
         }
+        .feedback__inner-cards {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
     
     @media(max-width: 992px) {
@@ -81,6 +93,9 @@
         }
         .product-page__header-buttons-view {
             margin-left: 0;
+        }
+        .fluid__inner {
+            flex-direction: column;
         }
         .footer__inner {
             flex-wrap: wrap;
@@ -202,6 +217,10 @@
     }
     
     @media(max-width: 790px) {
+        .news__card {
+            flex-basis: 100%;
+            max-width: 400px;
+        }
         //карточки отображаются по две в ряд category.html
         .mini-card__item {
             flex-basis: calc(50% - 20px);

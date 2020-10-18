@@ -19,20 +19,28 @@ $(function() {
 
     });
     $('.feed__inner').slick({
-        // infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         variableWidth: true,
         prevArrow: '<img class="slider-arrows slider-arrows__left" src="images/icons/prew-arrow.svg" alt=""></img>',
         nextArrow: '<img class="slider-arrows slider-arrows__right" src="images/icons/next-arrow.svg" alt=""></img>',
         responsive: [{
-            breakpoint: 1152,
-            settings: {
-                variableWidth: false,
-                slidesToShow: 2,
-                slidesToScroll: 1,
+                breakpoint: 1152,
+                settings: {
+                    variableWidth: false,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 750,
+                settings: {
+                    variableWidth: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
             }
-        }, ]
+        ]
     });
 
 
