@@ -16,14 +16,23 @@ $(function() {
         fade: true,
         prevArrow: '<img class="slider-arrows slider-arrows__left" src="images/icons/prew-arrow.svg" alt=""></img>',
         nextArrow: '<img class="slider-arrows slider-arrows__right" src="images/icons/next-arrow.svg" alt=""></img>',
+
     });
     $('.feed__inner').slick({
-        infinite: true,
+        // infinite: true,
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         variableWidth: true,
         prevArrow: '<img class="slider-arrows slider-arrows__left" src="images/icons/prew-arrow.svg" alt=""></img>',
         nextArrow: '<img class="slider-arrows slider-arrows__right" src="images/icons/next-arrow.svg" alt=""></img>',
+        responsive: [{
+            breakpoint: 1152,
+            settings: {
+                variableWidth: false,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
+        }, ]
     });
 
 
@@ -77,10 +86,6 @@ $(function() {
     //     $('.user__menu').toggleClass('user__menu--off');
     // });
 
-    // var containerEl = document.querySelector('.cards__inner');
-    // var mixer;
-
-
     // if (containerEl) {
     //     mixer = mixitup(containerEl, {
     //         selectors: {
@@ -91,6 +96,23 @@ $(function() {
     //         }
     //     });
     // }
+
+    // let test = $(".pagination__list li").length;
+    // console.log(test);
+
+    // let test = $(".pagination__list li").hide(function() {
+
+    // });
+
+    //-----------------------//
+
+    $('.pagination__list').each(function() {
+        $(this).find('.hide').hide();
+    });
+
+
+    var mixer = mixitup('.cards__inner');
+
     let map;
     let marker;
     map = new google.maps.Map(document.getElementById('map'), {
@@ -103,6 +125,9 @@ $(function() {
         icon: '../images/icons/map-marker.png',
     });
 
-    var mixer = mixitup('.cards__inner');
+    //------------------------//
+
+
+    // var mixer = mixitup('.cards__inner');
 
 });
